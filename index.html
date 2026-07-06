@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Residences | Empreendimento de Luxo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <section class="relative bg-slate-900 text-white py-24 px-6 text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1000');">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-amber-400 font-semibold tracking-widest uppercase text-sm">Lançamento Exclusivo</span>
+            <h1 class="text-4xl md:text-6xl font-bold mt-2 mb-4">Horizon Residences</h1>
+            <p class="text-lg md:text-xl text-slate-300 mb-8">Apartamentos de luxo com vista panorâmica, piscina infinita e acabamentos premium no coração da cidade.</p>
+            <a href="#contacto" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold px-8 py-4 rounded-lg shadow-lg transition duration-300 inline-block">Agendar Visita Privada</a>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">O que o Horizon oferece</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <div class="text-amber-500 text-3xl mb-3">📍</div>
+                <h3 class="text-xl font-semibold mb-2">Localização Premium</h3>
+                <p class="text-slate-600 text-sm">Próximo dos melhores restaurantes, colégios e com acessos rápidos a toda a cidade.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <div class="text-amber-500 text-3xl mb-3">🏊‍♂️</div>
+                <h3 class="text-xl font-semibold mb-2">Lazer de Luxo</h3>
+                <p class="text-slate-600 text-sm">Piscina de horizonte infinito no rooftop, ginásio totalmente equipado e SPA privativo.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <div class="text-amber-500 text-3xl mb-3">🛡️</div>
+                <h3 class="text-xl font-semibold mb-2">Privacidade Total</h3>
+                <p class="text-slate-600 text-sm">Segurança privada 24 horas por dia, acessos biométricos e garagens box individuais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="bg-slate-100 py-16 px-6">
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-900 text-center mb-2">Fale com um Consultor</h2>
+            <p class="text-slate-600 text-center text-sm mb-6">Receba a brochura completa com preços e plantas exclusivas.</p>
+            
+            <form id="formImobiliaria" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Nome Completo</label>
+                    <input type="text" id="nome" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 bg-slate-50">
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">E-mail</label>
+                        <input type="email" id="email" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 bg-slate-50">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Telemóvel</label>
+                        <input type="tel" id="telemovel" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 bg-slate-50">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Pretende comprar em quanto tempo?</label>
+                    <select id="prazo" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 bg-slate-50">
+                        <option value="Imediato (Menos de 3 meses)">Imediato (Menos de 3 meses)</option>
+                        <option value="Médio Prazo (3 a 6 meses)">Médio Prazo (3 a 6 meses)</option>
+                        <option value="Apenas a pesquisar">Apenas a pesquisar</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Mensagem ou Dúvida (Opcional)</label>
+                    <textarea id="mensagem" rows="3" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 bg-slate-50"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 rounded-lg shadow-md transition duration-300 cursor-pointer">
+                    Solicitar Informações adicionais
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
